@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      
       body {
         font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
@@ -23,15 +27,16 @@
       }
 
       .container {
-        width: 80%;
+        width: 90%;
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 15px;
       }
 
       header {
         background: linear-gradient(to right, #0055a4, #002f6c);
         color: white;
-        padding: 20px 0;
+        padding: 15px 0;
         text-align: center;
         border-bottom: 5px solid #ff5c01;
       }
@@ -40,45 +45,72 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        flex-wrap: wrap;
         margin-bottom: 15px;
-        
       }
 
       .logo {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         background-color: white;
-        border-radius: 60px;
+        border-radius: 50%;
         display: flex;
         object-fit: cover;
         align-items: center;
         justify-content: center;
-        margin-right: 20px;
+        margin: 0 10px 10px 0;
         border: 3px solid #ff5c01;
+      }
+
+      @media (min-width: 768px) {
+        .logo {
+          width: 120px;
+          height: 120px;
+          margin-right: 20px;
+        }
       }
 
       .logo span {
         font-weight: bold;
         color: #0055a4;
-        font-size: 2em;
+        font-size: 1.5em;
       }
 
       h1 {
-        font-size: 3em;
+        font-size: 1.8em;
         margin-bottom: 10px;
         text-shadow: 2px 2px 0 #00254a;
       }
 
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 3em;
+        }
+      }
+
       h2 {
-        font-size: 2em;
-        margin-top: 30px;
+        font-size: 1.5em;
+        margin-top: 20px;
         color: #ff5733;
         text-shadow: 1px 1px 0 #333;
       }
 
+      @media (min-width: 768px) {
+        h2 {
+          font-size: 2em;
+          margin-top: 30px;
+        }
+      }
+
       .blink {
         animation: blinker 1s linear infinite;
+        font-size: 1.2em;
+      }
+
+      @media (min-width: 768px) {
+        .blink {
+          font-size: 1.5em;
+        }
       }
 
       @keyframes blinker {
@@ -89,21 +121,29 @@
 
       .section {
         background-color: white;
-        padding: 20px;
-        margin: 20px 0;
+        padding: 15px;
+        margin: 15px 0;
         border-radius: 15px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         border: 3px solid #0055a4;
       }
 
+      @media (min-width: 768px) {
+        .section {
+          padding: 20px;
+          margin: 20px 0;
+        }
+      }
+
       .image-container {
         text-align: center;
-        margin: 20px 0;
+        margin: 15px 0;
       }
 
       .image-placeholder {
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
         background-color: #ccc;
         margin: 0 auto;
         display: flex;
@@ -114,12 +154,18 @@
       }
 
       .emoji {
-        font-size: 2em;
+        font-size: 1.5em;
+      }
+
+      @media (min-width: 768px) {
+        .emoji {
+          font-size: 2em;
+        }
       }
 
       .testimonial {
         font-style: italic;
-        margin: 20px 0;
+        margin: 15px 0;
         padding: 15px;
         background-color: #f0f0f0;
         border-left: 5px solid #ff5c01;
@@ -140,34 +186,31 @@
         overflow: hidden;
       }
 
-      .marquee p {
+      .marquee marquee {
         white-space: nowrap;
-        animation: marquee 30s linear infinite;
-        padding-right: 300%; 
-        display: inline-block;
-        padding-right: 100%;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
       }
 
       .flashing-button {
         background-color: #ff5c01;
         color: white;
         border: none;
-        padding: 15px 30px;
-        font-size: 1.5em;
+        padding: 12px 20px;
+        font-size: 1.2em;
         cursor: pointer;
-        margin: 20px 0;
+        margin: 15px 0;
         animation: flash 1s linear infinite;
         border-radius: 10px;
         font-weight: bold;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      @media (min-width: 768px) {
+        .flashing-button {
+          padding: 15px 30px;
+          font-size: 1.5em;
+          margin: 20px 0;
+        }
       }
 
       @keyframes flash {
@@ -180,6 +223,148 @@
           background-color: #0055a4;
         }
       }
+
+      .feature-box {
+        text-align: center;
+        flex: 1;
+        min-width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .feature-box {
+          min-width: 200px;
+          margin: 10px;
+        }
+      }
+
+      .feature-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0;
+      }
+
+      @media (min-width: 768px) {
+        .feature-container {
+          flex-direction: row;
+          margin: 30px 0;
+        }
+      }
+
+      .offer-box {
+        flex: 1;
+        min-width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        border: 2px dashed #ff5c01;
+        border-radius: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .offer-box {
+          min-width: 300px;
+          margin: 10px;
+        }
+      }
+
+      .offer-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      @media (min-width: 768px) {
+        .offer-container {
+          flex-direction: row;
+        }
+      }
+
+      .responsive-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border: 5px solid #fb9d6a;
+      }
+
+      .responsive-portrait {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        border: 1px solid black;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .footer-content {
+          flex-direction: row;
+          text-align: left;
+        }
+      }
+
+      .footer-logo {
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 0 0 15px 0;
+      }
+
+      @media (min-width: 768px) {
+        .footer-logo {
+          margin: 0 15px 0 0;
+        }
+      }
+
+      #game-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        border: 3px solid #ff5c01;
+      }
+
+      @media (min-width: 768px) {
+        #game-container {
+          max-width: 600px;
+          padding: 20px;
+        }
+      }
+
+      #fuel-button {
+        background-color: #0055a4;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 15px 0;
+        transition: transform 0.1s;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      @media (min-width: 768px) {
+        #fuel-button {
+          padding: 15px 30px;
+          font-size: 1.5em;
+          margin: 20px 0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -188,25 +373,20 @@
         <div class="logo">
           <img
             src="image.png"
-            jsaction=""
-            
-            style="max-width: 840px; height: 50px; margin: 0px; width: 50px; border-radius: 20%; "
-            alt="Indian Oil Corporation Vector Logo | TOPpng"
-            jsname="kn3ccd"
+            style="max-width: 100%; height: auto; max-height: 50px; width: auto; border-radius: 20%;"
+            alt="Indian Oil Corporation Logo"
           />
         </div>
         <h1>SHAHI FILLING STATION</h1>
       </div>
-      <p class="blink" style="font-size: 1.5em">⛽ PETROL LOW ? COMEEE FAST! ⛽</p>
+      <p class="blink">⛽ PETROL LOW ? COMEEE FAST! ⛽</p>
     </header>
 
     <div class="marquee">
-      <!-- <p> -->
-        <marquee behavior="scroll" direction="left" scrollamount="15" class="marquee">
-            Our petrol is smoother than your last relationship 💅⛽
+      <marquee behavior="scroll" direction="left" scrollamount="10">
+        Our petrol is smoother than your last relationship 💅⛽
         🚨 DULIAJAN'S BEST PETROL STATION IS SHAHI'S FILLING STATION! 🚨 RUN.. YOU ARE MISSING OUT ON 🚨 QUALITY FUEL AND HAPPY VEHICLE! 🚨
-    </marquee>
-      <!-- </p> -->
+      </marquee>
     </div>
 
     <div class="container">
@@ -221,14 +401,13 @@
         </p>
 
         <div class="image-container">
-          <img src="pumpgood.png" alt="Our Majestic Petrol Pump" 
-          style="max-width: 840px; margin: 0px; width: 80%; height: 80%; border: 5px solid #fb9d6a; "
+          <img 
+            src="pumpgood.png" 
+            alt="Our Majestic Petrol Pump" 
+            class="responsive-image"
           />
           <p>
-            <small
-              >Our IOCL pump (the 8th Wonder of the
-              World)</small
-            >
+            <small>Our IOCL pump (the 8th Wonder of the World)</small>
           </p>
         </div>
 
@@ -267,8 +446,6 @@
               Diesel
             </li>
             <li>
-
-            <li>
               <i class="fas fa-check" style="color: #ff5c01"></i> 24x7 Service
               (Except when Niku is napping)
             </li>
@@ -282,30 +459,28 @@
         <div class="image-container">
           <img
             src="nikuserious Small.png"
-            style="height: 30%; width: 40%; border: 1px solid black;"
+            class="responsive-portrait"
             alt="The Legend Himself - Navneet Shahi"
           />
           <p>The man, the myth, the legend! Mr. SHAHI</p>
         </div>
 
-        <p style=" font-size: 1.5em; text-align: center;">
-         Wait... He is not so serious all the times, He smiles too!!
+        <p style="font-size: 1.2em; text-align: center;">
+          Wait... He is not so serious all the times, He smiles too!!
         </p>
 
         <div class="image-container">
-            <img
+          <img
             src="nikusmile Small.png"
-            style="height: 30%; width: 40%; border: 1px solid black;"
+            class="responsive-portrait"
             alt="The Legend Himself - Navneet Shahi"
           />
           <p>
-            <small
-              >Rare footage of MR. SHAHI smiling!(This is because he saw a hot girl comming to fuel her vehicle)</small
-            >
+            <small>Rare footage of MR. SHAHI smiling! (This is because he saw a hot girl coming to fuel her vehicle)</small>
           </p>
         </div>
 
-        <p style="text-align: center; font-size: 1.5em">
+        <p style="text-align: center; font-size: 1.2em">
           To keep his smile going, please keep the sales going and visit our
           pump! <span class="emoji">😭😭</span>
         </p>
@@ -328,14 +503,13 @@
         <h2>NOT JUST ANY PETROL PUMP... AN EXPERIENCE!</h2>
 
         <div class="image-container">
-            <img src="pump 2.png" alt="Our Majestic Petrol Pump" 
-            style="max-width: 840px; margin: 0px; width: 80%; height: 80%; border: 5px solid #ff5c01; "
-            />
+          <img 
+            src="pump 2.png" 
+            alt="Our Majestic Petrol Pump" 
+            class="responsive-image"
+          />
           <p>
-            <small
-              >So aesthetic you might just wanna live here forever
-              </small
-            >
+            <small>So aesthetic you might just wanna live here forever</small>
           </p>
         </div>
 
@@ -353,43 +527,16 @@
           that Instagram influencers come here for photoshoots!
         </p>
 
-        <div
-          style="
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 30px 0;
-          "
-        >
-          <div
-            style="
-              text-align: center;
-              flex: 1;
-              min-width: 200px;
-              margin: 10px;
-              padding: 15px;
-              background-color: #f5f5f5;
-              border-radius: 8px;
-            "
-          >
+        <div class="feature-container">
+          <div class="feature-box">
             <i
               class="fas fa-tachometer-alt"
               style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
             ></i>
             <h4>HIGH-PERFORMANCE</h4>
-            <p>When there is Navneet there is this full performance gaurantee</p>
+            <p>When there is Navneet there is this full performance guarantee</p>
           </div>
-          <div
-            style="
-              text-align: center;
-              flex: 1;
-              min-width: 200px;
-              margin: 10px;
-              padding: 15px;
-              background-color: #f5f5f5;
-              border-radius: 8px;
-            "
-          >
+          <div class="feature-box">
             <i
               class="fas fa-leaf"
               style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
@@ -397,17 +544,7 @@
             <h4>ECO-FRIENDLY</h4>
             <p>SHAHI fuel is cleaner than Tezpur</p>
           </div>
-          <div
-            style="
-              text-align: center;
-              flex: 1;
-              min-width: 200px;
-              margin: 10px;
-              padding: 15px;
-              background-color: #f5f5f5;
-              border-radius: 8px;
-            "
-          >
+          <div class="feature-box">
             <i
               class="fas fa-smile"
               style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
@@ -429,10 +566,11 @@
           to any other pump." - Definitely not made up
         </div>
       </div>
+      
       <div class="section" style="text-align: center;">
-        <h2 style="color: #0055a4; margin-bottom: 30px;"><i class="fas fa-gamepad"></i> GAME ZONE: MAKE NIKU SMILE!</h2>
+        <h2 style="color: #0055a4; margin-bottom: 20px;"><i class="fas fa-gamepad"></i> GAME ZONE: MAKE NIKU SMILE!</h2>
         
-        <div id="game-container" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; border-radius: 15px; border: 3px solid #ff5c01;">
+        <div id="game-container">
             <h3 style="margin-top: 0;">Press to Fill Petrol!</h3>
             
             <div style="margin: 20px 0;">
@@ -445,14 +583,14 @@
                 </div>
             </div>
             
-            <div id="navneet-face" style="font-size: 5em; margin: 15px 0;">😐</div>
+            <div id="navneet-face" style="font-size: 4em; margin: 15px 0;">😐</div>
             <p style="font-weight: bold; color: #0055a4;">Make Navneet Smile!</p>
             
-            <button id="fuel-button" style="background-color: #0055a4; color: white; border: none; padding: 15px 30px; font-size: 1.5em; cursor: pointer; border-radius: 10px; margin: 20px 0; transition: transform 0.1s;">
+            <button id="fuel-button">
                 <i class="fas fa-gas-pump"></i> PUMP FUEL
             </button>
             
-            <div id="message" style="height: 50px; font-weight: bold;"></div>
+            <div id="message" style="height: 50px; font-weight: bold; margin-top: 10px;"></div>
         </div>
         
         <script>
@@ -510,27 +648,21 @@
                         from { transform: scale(1); }
                         to { transform: scale(1.2); }
                     }
+                    @media (min-width: 768px) {
+                        #navneet-face {
+                            font-size: 5em;
+                        }
+                    }
                 `;
                 document.head.appendChild(style);
             });
         </script>
-    </div>
+      </div>
 
       <div class="section">
         <h2>SPECIAL OFFERS AT YOUR FAVORITE IOCL</h2>
-        <div
-          style="display: flex; flex-wrap: wrap; justify-content: space-between"
-        >
-          <div
-            style="
-              flex: 1;
-              min-width: 300px;
-              margin: 10px;
-              padding: 15px;
-              border: 2px dashed #ff5c01;
-              border-radius: 8px;
-            "
-          >
+        <div class="offer-container">
+          <div class="offer-box">
             <h3 style="color: #0055a4">
               <i class="fas fa-gift"></i> LOYALTY PROGRAM
             </h3>
@@ -541,16 +673,7 @@
               🔥 10 litre pe bhi ek hi milega !
             </p>
           </div>
-          <div
-            style="
-              flex: 1;
-              min-width: 300px;
-              margin: 10px;
-              padding: 15px;
-              border: 2px dashed #ff5c01;
-              border-radius: 8px;
-            "
-          >
+          <div class="offer-box">
             <h3 style="color: #0055a4">
               <i class="fas fa-percent"></i> WEEKEND SPECIALS
             </h3>
@@ -580,25 +703,9 @@
     </div>
 
     <footer>
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 15px;
-        "
-      >
-        <div
-          style="
-            background-color: white;
-            padding: 10px;
-            border-radius: 50%;
-            margin-right: 15px;
-          "
-        >
-          <span style="font-weight: bold; color: #0055a4; font-size: 1.5em"
-            >IOCL</span
-          >
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span style="font-weight: bold; color: #0055a4; font-size: 1.5em">IOCL</span>
         </div>
         <div>
           <h3>NAVNEET'S PREMIUM IOCL</h3>
@@ -610,23 +717,14 @@
         Is Counted By Navneet)
       </p>
       <p>
-        <small
-          >This website is 100% real and approved by Navneet.</small
-        >
+        <small>This website is 100% real and approved by Navneet.</small>
       </p>
       <p>
-        <small
-          >Warning: Excessive visits to our pump may result in empty wallets.</small
-        >
+        <small>Warning: Excessive visits to our pump may result in empty wallets.</small>
       </p>
       <p><span class="emoji">⛽❤️🚗</span></p>
       <p>
-        <small
-          >This website was made with love as a surprise for Niku by his
-          besttttt friends.</small
-        >
-    
-        
+        <small>This website was made with love as a surprise for Niku by his besttttt friends.</small>
       </p>
     </footer>
   </body>
