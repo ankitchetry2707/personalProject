@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navneet's Premium IOCL Petrol Pump</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        background: linear-gradient(to right, #0055a4, #002f6c);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 5px solid #ff5c01;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 15px;
+        
+      }
+
+      .logo {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        border-radius: 60px;
+        display: flex;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        border: 3px solid #ff5c01;
+      }
+
+      .logo span {
+        font-weight: bold;
+        color: #0055a4;
+        font-size: 2em;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 0 #00254a;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin-top: 30px;
+        color: #ff5733;
+        text-shadow: 1px 1px 0 #333;
+      }
+
+      .blink {
+        animation: blinker 1s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .section {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border: 3px solid #0055a4;
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .image-placeholder {
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border: 3px solid #0055a4;
+      }
+
+      .emoji {
+        font-size: 2em;
+      }
+
+      .testimonial {
+        font-style: italic;
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #f0f0f0;
+        border-left: 5px solid #ff5c01;
+      }
+
+      footer {
+        background-color: #0055a4;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+
+      .marquee {
+        background-color: #ff5c01;
+        color: white;
+        padding: 10px 0;
+        overflow: hidden;
+      }
+
+      .marquee p {
+        white-space: nowrap;
+        animation: marquee 30s linear infinite;
+        padding-right: 300%; 
+        display: inline-block;
+        padding-right: 100%;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .flashing-button {
+        background-color: #ff5c01;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.5em;
+        cursor: pointer;
+        margin: 20px 0;
+        animation: flash 1s linear infinite;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      @keyframes flash {
+        0%,
+        49% {
+          background-color: #ff5c01;
+        }
+        50%,
+        100% {
+          background-color: #0055a4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <img
+            src="image.png"
+            jsaction=""
+            
+            style="max-width: 840px; height: 90px; margin: 0px; width: 80px; border-radius: 10%; "
+            alt="Indian Oil Corporation Vector Logo | TOPpng"
+            jsname="kn3ccd"
+          />
+        </div>
+        <h1>SHAHI FILLING STATION</h1>
+      </div>
+      <p class="blink" style="font-size: 1.5em">⛽ PETROL LOW ? COMEEE FAST! ⛽</p>
+    </header>
+
+    <div class="marquee">
+      <!-- <p> -->
+        <marquee behavior="scroll" direction="left" scrollamount="15" class="marquee">
+            Our petrol is smoother than your last relationship 💅⛽
+        🚨 DULIAJAN'S BEST PETROL STATION IS SHAHI'S FILLING STATION! 🚨 RUN.. YOU ARE MISSING OUT ON 🚨 QUALITY FUEL AND HAPPY VEHICLE! 🚨
+    </marquee>
+      <!-- </p> -->
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>THE PETROL KING OF DULIAJAN</h2>
+        <p style="text-align: center;">
+          Welcome to the most CRAZY IOCL petrol pump in all of Assam!
+          Located at:
+        </p>
+        <p style="text-align: center; font-weight: bold">
+          Tipling Road, Central Namghar, Duliajan, Assam 786602
+        </p>
+
+        <div class="image-container">
+          <img src="pumpgood.png" alt="Our Majestic Petrol Pump" 
+          style="max-width: 840px; margin: 0px; width: 80%; height: 80%; border: 5px solid #fb9d6a; "
+          />
+          <p>
+            <small
+              >Our IOCL pump (the 8th Wonder of the
+              World)</small
+            >
+          </p>
+        </div>
+
+        <p>
+          At Navneet's IOCL, we don't just sell petrol... We sell
+          <span
+            style="
+              font-style: italic;
+              font-weight: bold;
+              font-size: 1.2em;
+              color: #0055a4;
+            "
+            >LIQUID HAPPINESS</span
+          >
+          for your vehicles!
+        </p>
+
+        <div
+          style="
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+          "
+        >
+          <h3 style="color: #0055a4; margin-top: 0">
+            <i class="fas fa-gas-pump"></i> Our Services:
+          </h3>
+          <ul style="list-style-type: none; padding-left: 20px">
+            <li>
+              <i class="fas fa-check" style="color: #ff5c01"></i> Premium
+              Quality IOCL Petrol
+            </li>
+            <li>
+              <i class="fas fa-check" style="color: #ff5c01"></i> High-Speed
+              Diesel
+            </li>
+            <li>
+
+            <li>
+              <i class="fas fa-check" style="color: #ff5c01"></i> 24x7 Service
+              (Except when Niku is napping)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>MEET THE BOSS MAN: NAVNEET SHAHI</h2>
+
+        <div class="image-container">
+          <img
+            src="nikuserious.png"
+            style="height: 30%; width: 40%; border: 1px solid black;"
+            alt="The Legend Himself - Navneet Shahi"
+          />
+          <p>The man, the myth, the legend! Mr. SHAHI</p>
+        </div>
+
+        <p style=" font-size: 1.5em; text-align: center;">
+         Wait... He is not so serious all the times, He smiles too!!
+        </p>
+
+        <div class="image-container">
+            <img
+            src="nikusmile.png"
+            style="height: 30%; width: 40%; border: 1px solid black;"
+            alt="The Legend Himself - Navneet Shahi"
+          />
+          <p>
+            <small
+              >Rare footage of MR. SHAHI smiling!(This is because he saw a hot girl comming to fuel her vehicle)</small
+            >
+          </p>
+        </div>
+
+        <p style="text-align: center; font-size: 1.5em">
+          To keep his smile going, please keep the sales going and visit our
+          pump! <span class="emoji">😭😭</span>
+        </p>
+
+        <div style="text-align: center">
+          <p>Your vehicle when you skip Navneet's pump:</p>
+          <span class="emoji">😢🚗</span>
+          <p>Your vehicle after visiting Navneet's pump:</p>
+          <span class="emoji">😎🏎️</span>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <button class="flashing-button">
+          <i class="fas fa-car"></i> DON'T MAKE NAVNEET SAD - VISIT US TODAY!
+        </button>
+      </div>
+
+      <div class="section">
+        <h2>NOT JUST ANY PETROL PUMP... AN EXPERIENCE!</h2>
+
+        <div class="image-container">
+            <img src="pump.png" alt="Our Majestic Petrol Pump" 
+            style="max-width: 840px; margin: 0px; width: 80%; height: 80%; border: 5px solid #ff5c01; "
+            />
+          <p>
+            <small
+              >So aesthetic you might just wanna live here forever
+              </small
+            >
+          </p>
+        </div>
+
+        <p>
+          Our IOCL petrol pump is so
+          <span
+            style="
+              font-style: italic;
+              font-weight: bold;
+              font-size: 1.2em;
+              color: #0055a4;
+            "
+            >A E S T H E T I C</span
+          >
+          that Instagram influencers come here for photoshoots!
+        </p>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+          "
+        >
+          <div
+            style="
+              text-align: center;
+              flex: 1;
+              min-width: 200px;
+              margin: 10px;
+              padding: 15px;
+              background-color: #f5f5f5;
+              border-radius: 8px;
+            "
+          >
+            <i
+              class="fas fa-tachometer-alt"
+              style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
+            ></i>
+            <h4>HIGH-PERFORMANCE</h4>
+            <p>Our IOCL fuel is precision-engineered for performance</p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              flex: 1;
+              min-width: 200px;
+              margin: 10px;
+              padding: 15px;
+              background-color: #f5f5f5;
+              border-radius: 8px;
+            "
+          >
+            <i
+              class="fas fa-leaf"
+              style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
+            ></i>
+            <h4>ECO-FRIENDLY</h4>
+            <p>IOCL's cleaner fuel for a greener tomorrow</p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              flex: 1;
+              min-width: 200px;
+              margin: 10px;
+              padding: 15px;
+              background-color: #f5f5f5;
+              border-radius: 8px;
+            "
+          >
+            <i
+              class="fas fa-smile"
+              style="font-size: 2.5em; color: #0055a4; margin-bottom: 10px"
+            ></i>
+            <h4>HAPPINESS GUARANTEE</h4>
+            <p>Navneet personally guarantees your satisfaction</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          "I filled my scooter at Navneet's IOCL pump and now it runs so
+          smoothly, it feels like I'm floating on clouds! Also, my scooter now
+          speaks fluent Sanskrit." - Probably a real customer
+        </div>
+
+        <div class="testimonial">
+          "I was just going to get air in my tires, but ended up buying IOCL
+          petrol too because the vibes were immaculate. Now my car refuses to go
+          to any other pump." - Definitely not made up
+        </div>
+      </div>
+      <div class="section" style="text-align: center;">
+        <h2 style="color: #0055a4; margin-bottom: 30px;"><i class="fas fa-gamepad"></i> GAME ZONE: MAKE NIKU SMILE!</h2>
+        
+        <div id="game-container" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; border-radius: 15px; border: 3px solid #ff5c01;">
+            <h3 style="margin-top: 0;">Press to Fill Petrol!</h3>
+            
+            <div style="margin: 20px 0;">
+                <div id="fuel-gauge" style="height: 30px; background-color: #e0e0e0; border-radius: 15px; overflow: hidden; margin: 20px 0;">
+                    <div id="fuel-level" style="width: 0%; height: 100%; background: linear-gradient(to right, #ff5c01, #ff8c41); transition: width 0.3s;"></div>
+                </div>
+                
+                <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;">
+                    <span id="fuel-percentage">0</span>% Full
+                </div>
+            </div>
+            
+            <div id="navneet-face" style="font-size: 5em; margin: 15px 0;">😐</div>
+            <p style="font-weight: bold; color: #0055a4;">Make Navneet Smile!</p>
+            
+            <button id="fuel-button" style="background-color: #0055a4; color: white; border: none; padding: 15px 30px; font-size: 1.5em; cursor: pointer; border-radius: 10px; margin: 20px 0; transition: transform 0.1s;">
+                <i class="fas fa-gas-pump"></i> PUMP FUEL
+            </button>
+            
+            <div id="message" style="height: 50px; font-weight: bold;"></div>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const fuelButton = document.getElementById('fuel-button');
+                const fuelLevel = document.getElementById('fuel-level');
+                const fuelPercentage = document.getElementById('fuel-percentage');
+                const navneetFace = document.getElementById('navneet-face');
+                const message = document.getElementById('message');
+                
+                let fuel = 0;
+                const maxFuel = 100;
+                const faces = ['😐', '🙂', '😊', '😄', '😁'];
+                const messages = [
+                    "Navneet is not impressed yet...",
+                    "Navneet's face is softening!",
+                    "Is that a hint of a smile?",
+                    "Wow! Navneet is actually smiling!",
+                    "FULL SMILE ACHIEVED! MIRACLE! YAYY!!"
+                ];
+                
+                function updateUI() {
+                    fuelPercentage.textContent = fuel;
+                    fuelLevel.style.width = fuel + '%';
+                    
+                    // Update face based on fuel level
+                    let faceIndex = Math.min(Math.floor(fuel/20), faces.length-1);
+                    navneetFace.textContent = faces[faceIndex];
+                    message.textContent = messages[faceIndex];
+                    
+                    // Special celebrations when full
+                    if (fuel >= 100) {
+                        message.innerHTML = "<span style='color: #ff5c01;'>FULL SMILE ACHIEVED! MIRACLE!</span>";
+                        navneetFace.style.animation = "bounce 0.5s infinite alternate";
+                    }
+                }
+                
+                fuelButton.addEventListener('click', function() {
+                    // Button press animation
+                    this.style.transform = "scale(0.95)";
+                    setTimeout(() => {
+                        this.style.transform = "scale(1)";
+                    }, 100);
+                    
+                    // Add fuel
+                    const increment = Math.floor(Math.random() * 5) + 1;
+                    fuel = Math.min(fuel + increment, maxFuel);
+                    updateUI();
+                });
+                
+                // Add some CSS animation
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes bounce {
+                        from { transform: scale(1); }
+                        to { transform: scale(1.2); }
+                    }
+                `;
+                document.head.appendChild(style);
+            });
+        </script>
+    </div>
+
+      <div class="section">
+        <h2>SPECIAL OFFERS AT YOUR FAVORITE IOCL</h2>
+        <div
+          style="display: flex; flex-wrap: wrap; justify-content: space-between"
+        >
+          <div
+            style="
+              flex: 1;
+              min-width: 300px;
+              margin: 10px;
+              padding: 15px;
+              border: 2px dashed #ff5c01;
+              border-radius: 8px;
+            "
+          >
+            <h3 style="color: #0055a4">
+              <i class="fas fa-gift"></i> LOYALTY PROGRAM
+            </h3>
+            <p>
+              🔥 3 Litre Petrol pe ek J free (iykyk)
+            </p>
+            <p>
+              🔥 10 litre pe bhi ek hi milega !
+            </p>
+          </div>
+          <div
+            style="
+              flex: 1;
+              min-width: 300px;
+              margin: 10px;
+              padding: 15px;
+              border: 2px dashed #ff5c01;
+              border-radius: 8px;
+            "
+          >
+            <h3 style="color: #0055a4">
+              <i class="fas fa-percent"></i> WEEKEND SPECIALS
+            </h3>
+            <p>
+              🔥 Full tank fill up pe ek candyyy freee!
+            </p>
+            <p>
+              🔥 5 doston ko laye aur unko boliye aur 5 dosto ke lekar aye!
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            background-color: #0055a4;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+          "
+        >
+          <h3 style="margin-top: 0">IOCL - INDIA'S ENERGY</h3>
+          <p>Trusted by millions across India. Now trusted by Navneet too!</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <div
+          style="
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 15px;
+          "
+        >
+          <span style="font-weight: bold; color: #0055a4; font-size: 1.5em"
+            >IOCL</span
+          >
+        </div>
+        <div>
+          <h3>NAVNEET'S PREMIUM IOCL</h3>
+          <p>Tipling Road, Central Namghar, Duliajan, Assam 786602</p>
+        </div>
+      </div>
+      <p>
+        © 2025 Navneet's Premium IOCL Petrol Pump | Where Every Drop Counts (And
+        Is Counted By Navneet)
+      </p>
+      <p>
+        <small
+          >This website is 100% real and approved by Navneet.</small
+        >
+      </p>
+      <p>
+        <small
+          >Warning: Excessive visits to our pump may result in empty wallets.</small
+        >
+      </p>
+      <p><span class="emoji">⛽❤️🚗</span></p>
+      <p>
+        <small
+          >This website was made with love as a surprise for Niku by his
+          besttttt friends.</small
+        >
+    
+        
+      </p>
+    </footer>
+  </body>
+</html>
